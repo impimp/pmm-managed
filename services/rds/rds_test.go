@@ -171,9 +171,10 @@ func TestDiscover(t *testing.T) {
 		require.NoError(t, err)
 		expected := []Instance{{
 			Node: models.RDSNode{
-				Type:   "rds",
-				Name:   "rds-aurora1",
-				Region: "us-east-1",
+				Type:             "rds",
+				Name:             "rds-aurora1",
+				Region:           "us-east-1",
+				AWSDBIResourceID: pointer.ToString("db-P5QCHK64NWDD5BLLBVT5NPQS2Q"),
 			},
 			Service: models.RDSService{
 				Type:          "rds",
@@ -184,9 +185,10 @@ func TestDiscover(t *testing.T) {
 			},
 		}, {
 			Node: models.RDSNode{
-				Type:   "rds",
-				Name:   "rds-aurora57",
-				Region: "us-east-1",
+				Type:             "rds",
+				Name:             "rds-aurora57",
+				Region:           "us-east-1",
+				AWSDBIResourceID: pointer.ToString("db-QYBVFI3OW6VME5FQNM2URY4ZOY"),
 			},
 			Service: models.RDSService{
 				Type:          "rds",
@@ -197,9 +199,10 @@ func TestDiscover(t *testing.T) {
 			},
 		}, {
 			Node: models.RDSNode{
-				Type:   "rds",
-				Name:   "rds-mysql56",
-				Region: "us-east-1",
+				Type:             "rds",
+				Name:             "rds-mysql56",
+				Region:           "us-east-1",
+				AWSDBIResourceID: pointer.ToString("db-J6JH3LJAWBZ6MXDDWYRG4RRJ6A"),
 			},
 			Service: models.RDSService{
 				Type:          "rds",
@@ -210,9 +213,10 @@ func TestDiscover(t *testing.T) {
 			},
 		}, {
 			Node: models.RDSNode{
-				Type:   "rds",
-				Name:   "rds-mysql57",
-				Region: "us-east-1",
+				Type:             "rds",
+				Name:             "rds-mysql57",
+				Region:           "us-east-1",
+				AWSDBIResourceID: pointer.ToString("db-FE4Y2GIJU6UADBOXKULV3DBATY"),
 			},
 			Service: models.RDSService{
 				Type:          "rds",
